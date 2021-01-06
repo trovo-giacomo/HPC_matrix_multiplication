@@ -1,0 +1,15 @@
+### Start Wed Jan  6 13:43:47 2021
+# /opt/oracle/developerstudio12.6/bin/../bin/er_archive -n -O /zhome/1a/b/153979/HPC_matrix_multiplication/..er/er_archive.log /zhome/1a/b/153979/HPC_matrix_multiplication/..er
+Copying `/zhome/1a/b/153979/HPC_matrix_multiplication/matmult_c.gcc'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/matmult_c.gcc_nKiBrzOJ4cd'
+Copying `/usr/lib64/libgcc_s-4.8.5-20150702.so.1'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libgcc_s-4.8.5-20150702.so.1_OCEC1bthLm2'
+Copying `/usr/lib64/libquadmath.so.0.0.0'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libquadmath.so.0.0.0_OCEC1bthLm2'
+Copying `/usr/lib64/libm-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libm-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libgfortran.so.3.0.0'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libgfortran.so.3.0.0_OCEC1bthLm2'
+Copying `/usr/lib64/librt-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/librt-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libpthread-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libpthread-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libc-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libc-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libdl-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libdl-2.17.so_OCEC1bthLm2'
+Copying `/zhome/1a/b/153979/HPC_matrix_multiplication/libmatmult.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libmatmult.so_nKiBrzOJ4cd'
+Copying `/usr/lib64/atlas/libsatlas.so.3.10'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libsatlas.so.3.10_bkXz1NQ1lK8'
+Copying `/opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/libcollector.so_-C8vWEvanQd'
+Copying `/usr/lib64/ld-2.17.so'  to `/zhome/1a/b/153979/HPC_matrix_multiplication/..er/archives/ld-2.17.so_OCEC1bthLm2'

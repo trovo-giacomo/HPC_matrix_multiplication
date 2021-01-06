@@ -17,7 +17,7 @@ module load studio
 
 # define the driver name to use
 # valid values: matmult_c.studio, matmult_f.studio, matmult_c.gcc or
-# matmult_f.gcc
+# matmult_c.gcc
 #
 EXECUTABLE=matmult_c.gcc
 
