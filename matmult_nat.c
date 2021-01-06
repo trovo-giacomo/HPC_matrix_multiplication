@@ -1,4 +1,4 @@
-void matmult_nat(int m, int n,, int k, double **A, double **B, double **C){    
+void matmult_nat(int m, int n, int k, double **A, double **B, double **C){    
     int i, j, z;
 
     for(i = 0; i < m; i++){
