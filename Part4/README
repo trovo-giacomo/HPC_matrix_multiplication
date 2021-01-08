@@ -1,0 +1,4 @@
+In the following folder are reported the results of part 4 of Assimgnet 1
+In the file resul_part_4.txt are stated all the numbers by means of performance, number of L1 and L2 cache hit and miss. The time in secods for each function, for both implementation, "nkm" and "nat" ("mnk").
+
+The in this folder are present the makefile used to compile part 4 and the collect_batch.sh file used to run all the experiments.

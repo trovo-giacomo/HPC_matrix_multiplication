@@ -1,0 +1,137 @@
+File: collector.8644496.er
+permutation with (m,n,k) = (100 100 100) no bs
+
+Excl.     Excl. L1      Excl. L1   Excl. L2   Excl. L2   Name
+Total     D-cache Hits  D-cache    Cache      Cache
+CPU sec.                Misses     Hits       Misses
+35.105    116366584242  166452055  163251053  2002003    <Total>
+ 6.735     22022063247   51216016   51216016  1001001    matmult_nkm
+ 6.705     22022063251   41613013   38412012  1001002    matmult_knm
+ 6.445     22142183596   16005005   16005005        0    matmult_kmn
+ 6.435     22102143481    6402002    9603003        0    matmult_mkn
+ 4.393     13984010188   48015018   44814016        0    matmult_nat
+ 4.383     14094120479    3201001    3201001        0    matmult_nmk
+Results:
+   234.375    455.268 # matmult_mnk
+   234.375    310.606 # matmult_mkn
+   234.375    310.563 # matmult_kmn
+   234.375    298.192 # matmult_knm
+   234.375    296.654 # matmult_nkm
+   234.375    456.189 # matmult_nmk
+
+// nkm
+File: collector.8688336.er
+matmult_blk 2
+
+Excl.     Incl.     Excl. L1     Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache      D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits         Misses    Hits      Misses
+5.384     5.384     11861884073  70422025  67221023  2002003    <Total>
+4.603     5.384     10700720784  67221024  64020022  2002003    matmult_blk
+0.781     0.781      1161163289   3201001   3201001        0    fmin
+   234.375    371.259 # matmult_blk 2
+
+File: collector.8688337.er
+matmult_blk 4
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+3.462     3.462     7897912676  38412017  35211012  0          <Total>
+3.022     3.462     7257270820  32010012  35211012  0          matmult_blk
+0.440     0.440      640641856   6402005         0  0          fmin
+   234.375    577.409 # matmult_blk 4
+
+File: collector.8703577.er
+# matmult_blk 8
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+2.612     2.612     6776789480  25608011  25608009  1001002    <Total>
+2.512     2.602     6486498653  25608011  16005007        0    matmult_blk
+0.090     0.090      290290827         0   9603002  1001002    fmin
+   234.375    763.878 # matmult_blk 8
+
+File: collector.8703460.er
+# matmult_blk 16
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+2.091     2.091     6376388350  22407014  22407008  0          <Total>
+2.001     2.091     6136147666  22407014  22407008  0          matmult_blk
+0.090     0.090      240240684         0         0  0          fmin
+   234.375    954.129 # matmult_blk 16
+
+File: collector.8688340.er
+matmult_blk 32
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+2.101     2.101     6176187758  19206009  16005005  0          <Total>
+2.071     2.101     6096107540  19206009  16005005  0          matmult_blk
+0.030     0.030       80080218         0         0  0          fmin
+
+    234.375    951.735 # matmult_blk 32
+
+
+//nat - mnk
+n-62-27-18(s202447) $ er_print -func collector.8688661.er
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl.     Incl.     Excl. L1     Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache      D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits         Misses    Hits      Misses
+5.574     5.574     12022044523  60819021  60819021  0          <Total>
+4.863     5.574     10420439851  57618020  60819021  0          matmult_blk
+0.710     0.710      1601604672   3201001         0  0          fmin
+   234.375    358.556 # matmult_blk 2
+
+
+n-62-27-18(s202447) $ er_print -func collector.8688662.er
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+3.693     3.693     7977992890  19206010  19206006  0          <Total>
+3.382     3.693     6896909736  19206010  19206006  0          matmult_blk
+0.310     0.310     1081083154         0         0  0          fmin
+   234.375    541.562 # matmult_blk 4
+
+n-62-27-18(s202447) $ er_print -func collector.8688663.er
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+3.132     3.132     6816829586  12804008  12804005  0          <Total>
+2.972     3.132     5935947212  12804008   6402003  0          matmult_blk
+0.160     0.160      880882374         0   6402002  0          fmin
+   234.375    637.024 # matmult_blk 8
+
+
+n-62-27-18(s202447) $ er_print -func collector.8688664.er
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+3.232     3.232     6376388308  9603007   9603004   0          <Total>
+3.122     3.232     6256267974  6402006   9603004   0          matmult_blk
+0.110     0.110      120120334  3201001         0   0          fmin
+   234.375    617.174 # matmult_blk 16
+
+
+n-62-27-18(s202447) $ er_print -func collector.8688665.er
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl.     Incl.     Excl. L1    Excl. L1  Excl. L2  Excl. L2   Name
+Total     Total     D-cache     D-cache   Cache     Cache
+CPU sec.  CPU sec.  Hits        Misses    Hits      Misses
+3.462     3.462     6216222114  6402005   6402004   0          <Total>
+3.402     3.462     6036041812  6402005   6402004   0          matmult_blk
+0.060     0.060      180180302        0         0   0          fmin
+   234.375    577.202 # matmult_blk 32
