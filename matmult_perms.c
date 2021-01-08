@@ -1,3 +1,4 @@
+#include "matmult_nat.h"
 void matmult_mnk(int m, int n, int k, double **A, double **B, double **C){    
     matmult_nat(m,n,k,A,B,C);
 }

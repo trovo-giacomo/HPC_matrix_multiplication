@@ -1,0 +1,266 @@
+Loaded module: studio/12u6
+Creating experiment database collector.8688840.er (Process ID: 28647) ...
+*** Error in `./matmult_c.gcc': double free or corruption (out): 0x0000000001bec310 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x7f37ebc14299]
+./matmult_c.gcc(matrixfree+0xf)[0x401d9f]
+./matmult_c.gcc(main+0x448)[0x401488]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f37ebbb5555]
+./matmult_c.gcc[0x40180d]
+======= Memory map: ========
+00400000-00404000 r-xp 00000000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+00603000-00604000 r-xp 00003000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+00604000-00605000 rwxp 00004000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+01bbd000-01c0c000 rwxp 00000000 00:00 0                                  [heap]
+7f37e0000000-7f37e0021000 rwxp 00000000 00:00 0 
+7f37e0021000-7f37e4000000 ---p 00000000 00:00 0 
+7f37e71f9000-7f37e72e9000 rwxp 00000000 00:00 0 
+7f37e72e9000-7f37e72f9000 rwxs 00000000 00:cd 7122017904                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688840.er/profile
+7f37e72f9000-7f37e7469000 rwxp 00000000 00:00 0 
+7f37e7469000-7f37e7479000 rwxs 00000000 00:cd 7116768384                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688840.er/hwcounters
+7f37e7479000-7f37ea4f9000 rwxp 00000000 00:00 0 
+7f37ea4f9000-7f37ea509000 rwxs 00000000 00:cd 7116175685                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688840.er/map.xml
+7f37ea509000-7f37ea8f9000 rwxp 00000000 00:00 0 
+7f37ea8f9000-7f37ea909000 rwxs 00000000 00:cd 7116768383                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688840.er/log.xml
+7f37ea909000-7f37eacf9000 rwxp 00000000 00:00 0 
+7f37eacf9000-7f37ead0e000 r-xp 00000000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f37ead0e000-7f37eaf0d000 ---p 00015000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f37eaf0d000-7f37eaf0e000 r-xp 00014000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f37eaf0e000-7f37eaf0f000 rwxp 00015000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f37eaf0f000-7f37eaf4a000 r-xp 00000000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f37eaf4a000-7f37eb149000 ---p 0003b000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f37eb149000-7f37eb14a000 r-xp 0003a000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f37eb14a000-7f37eb14b000 rwxp 0003b000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f37eb14b000-7f37eb24c000 r-xp 00000000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f37eb24c000-7f37eb44b000 ---p 00101000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f37eb44b000-7f37eb44c000 r-xp 00100000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f37eb44c000-7f37eb44d000 rwxp 00101000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f37eb44d000-7f37eb56c000 r-xp 00000000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f37eb56c000-7f37eb76c000 ---p 0011f000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f37eb76c000-7f37eb76d000 r-xp 0011f000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f37eb76d000-7f37eb76f000 rwxp 00120000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f37eb76f000-7f37eb776000 r-xp 00000000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f37eb776000-7f37eb975000 ---p 00007000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f37eb975000-7f37eb976000 r-xp 00006000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f37eb976000-7f37eb977000 rwxp 00007000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f37eb977000-7f37eb98e000 r-xp 00000000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f37eb98e000-7f37ebb8d000 ---p 00017000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f37ebb8d000-7f37ebb8e000 r-xp 00016000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f37ebb8e000-7f37ebb8f000 rwxp 00017000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f37ebb8f000-7f37ebb93000 rwxp 00000000 00:00 0 
+7f37ebb93000-7f37ebd57000 r-xp 00000000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f37ebd57000-7f37ebf56000 ---p 001c4000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f37ebf56000-7f37ebf5a000 r-xp 001c3000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f37ebf5a000-7f37ebf5c000 rwxp 001c7000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f37ebf5c000-7f37ebf61000 rwxp 00000000 00:00 0 
+7f37ebf61000-7f37ebf63000 r-xp 00000000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f37ebf63000-7f37ec163000 ---p 00002000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f37ec163000-7f37ec164000 r-xp 00002000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f37ec164000-7f37ec165000 rwxp 00003000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f37ec165000-7f37ec167000 r-xp 00000000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f37ec167000-7f37ec366000 ---p 00002000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f37ec366000-7f37ec367000 r-xp 00001000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f37ec367000-7f37ec368000 rwxp 00002000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f37ec368000-7f37ecd70000 r-xp 00000000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f37ecd70000-7f37ecf70000 ---p 00a08000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f37ecf70000-7f37ecf75000 r-xp 00a08000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f37ecf75000-7f37ecf7e000 rwxp 00a0d000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f37ecf7e000-7f37ecff3000 r-xp 00000000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f37ecff3000-7f37ed1f2000 ---p 00075000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f37ed1f2000-7f37ed2ca000 rwxp 00074000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f37ed2ca000-7f37ed2e8000 rwxp 00000000 00:00 0 
+7f37ed2e8000-7f37ed30a000 r-xp 00000000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f37ed357000-7f37ed447000 rwxp 00000000 00:00 0 
+7f37ed447000-7f37ed457000 rwxs 00000000 00:cd 7116029756                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688840.er/data.frameinfo
+7f37ed457000-7f37ed4de000 rwxp 00000000 00:00 0 
+7f37ed4e7000-7f37ed4ea000 rwxp 00000000 00:00 0 
+7f37ed4ea000-7f37ed4ec000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f37ed4ec000-7f37ed4ee000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f37ed4ee000-7f37ed4f0000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f37ed4f0000-7f37ed4f2000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f37ed4f2000-7f37ed509000 rwxp 00000000 00:00 0 
+7f37ed509000-7f37ed50a000 r-xp 00021000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f37ed50a000-7f37ed50b000 rwxp 00022000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f37ed50b000-7f37ed50c000 rwxp 00000000 00:00 0 
+7fff9d8aa000-7fff9d8cc000 rwxp 00000000 00:00 0                          [stack]
+7fff9d92e000-7fff9d930000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+   234.375    764.560 # matmult_blk 8
+/zhome/49/5/153826/.lsbatch/1610040301.8688840.shell: line 60: 28647 Aborted                 collect -o $EXPOUT $HWCOUNT ./$EXECUTABLE $PERM $MKN $BS
+name collector.8688840.er is in use; changed to collector.8688841.er
+Creating experiment database collector.8688841.er (Process ID: 28677) ...
+*** Error in `./matmult_c.gcc': double free or corruption (out): 0x0000000000d28310 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x7f2b8d8a8299]
+./matmult_c.gcc(matrixfree+0xf)[0x401d9f]
+./matmult_c.gcc(main+0x448)[0x401488]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f2b8d849555]
+./matmult_c.gcc[0x40180d]
+======= Memory map: ========
+00400000-00404000 r-xp 00000000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+00603000-00604000 r-xp 00003000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+00604000-00605000 rwxp 00004000 00:cd 7121741655                         /zhome/49/5/153826/HPC_matrix_multiplication/matmult_c.gcc
+00cf9000-00d48000 rwxp 00000000 00:00 0                                  [heap]
+7f2b84000000-7f2b84021000 rwxp 00000000 00:00 0 
+7f2b84021000-7f2b88000000 ---p 00000000 00:00 0 
+7f2b88e8d000-7f2b88fdd000 rwxp 00000000 00:00 0 
+7f2b88fdd000-7f2b88fed000 rwxs 00000000 00:cd 7116768385                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688841.er/profile
+7f2b88fed000-7f2b8915d000 rwxp 00000000 00:00 0 
+7f2b8915d000-7f2b8916d000 rwxs 00000000 00:cd 7119139664                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688841.er/hwcounters
+7f2b8916d000-7f2b8c18d000 rwxp 00000000 00:00 0 
+7f2b8c18d000-7f2b8c19d000 rwxs 00000000 00:cd 7122017905                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688841.er/map.xml
+7f2b8c19d000-7f2b8c58d000 rwxp 00000000 00:00 0 
+7f2b8c58d000-7f2b8c59d000 rwxs 00000000 00:cd 7119139663                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688841.er/log.xml
+7f2b8c59d000-7f2b8c98d000 rwxp 00000000 00:00 0 
+7f2b8c98d000-7f2b8c9a2000 r-xp 00000000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f2b8c9a2000-7f2b8cba1000 ---p 00015000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f2b8cba1000-7f2b8cba2000 r-xp 00014000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f2b8cba2000-7f2b8cba3000 rwxp 00015000 08:05 32724                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f2b8cba3000-7f2b8cbde000 r-xp 00000000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f2b8cbde000-7f2b8cddd000 ---p 0003b000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f2b8cddd000-7f2b8cdde000 r-xp 0003a000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f2b8cdde000-7f2b8cddf000 rwxp 0003b000 08:05 35669                      /usr/lib64/libquadmath.so.0.0.0
+7f2b8cddf000-7f2b8cee0000 r-xp 00000000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f2b8cee0000-7f2b8d0df000 ---p 00101000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f2b8d0df000-7f2b8d0e0000 r-xp 00100000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f2b8d0e0000-7f2b8d0e1000 rwxp 00101000 08:05 36942                      /usr/lib64/libm-2.17.so
+7f2b8d0e1000-7f2b8d200000 r-xp 00000000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f2b8d200000-7f2b8d400000 ---p 0011f000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f2b8d400000-7f2b8d401000 r-xp 0011f000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f2b8d401000-7f2b8d403000 rwxp 00120000 08:05 35787                      /usr/lib64/libgfortran.so.3.0.0
+7f2b8d403000-7f2b8d40a000 r-xp 00000000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f2b8d40a000-7f2b8d609000 ---p 00007000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f2b8d609000-7f2b8d60a000 r-xp 00006000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f2b8d60a000-7f2b8d60b000 rwxp 00007000 08:05 36954                      /usr/lib64/librt-2.17.so
+7f2b8d60b000-7f2b8d622000 r-xp 00000000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f2b8d622000-7f2b8d821000 ---p 00017000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f2b8d821000-7f2b8d822000 r-xp 00016000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f2b8d822000-7f2b8d823000 rwxp 00017000 08:05 32747                      /usr/lib64/libpthread-2.17.so
+7f2b8d823000-7f2b8d827000 rwxp 00000000 00:00 0 
+7f2b8d827000-7f2b8d9eb000 r-xp 00000000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f2b8d9eb000-7f2b8dbea000 ---p 001c4000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f2b8dbea000-7f2b8dbee000 r-xp 001c3000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f2b8dbee000-7f2b8dbf0000 rwxp 001c7000 08:05 32721                      /usr/lib64/libc-2.17.so
+7f2b8dbf0000-7f2b8dbf5000 rwxp 00000000 00:00 0 
+7f2b8dbf5000-7f2b8dbf7000 r-xp 00000000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f2b8dbf7000-7f2b8ddf7000 ---p 00002000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f2b8ddf7000-7f2b8ddf8000 r-xp 00002000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f2b8ddf8000-7f2b8ddf9000 rwxp 00003000 08:05 36845                      /usr/lib64/libdl-2.17.so
+7f2b8ddf9000-7f2b8ddfb000 r-xp 00000000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f2b8ddfb000-7f2b8dffa000 ---p 00002000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f2b8dffa000-7f2b8dffb000 r-xp 00001000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f2b8dffb000-7f2b8dffc000 rwxp 00002000 00:cd 7124487340                 /zhome/49/5/153826/HPC_matrix_multiplication/libmatmult.so
+7f2b8dffc000-7f2b8ea04000 r-xp 00000000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f2b8ea04000-7f2b8ec04000 ---p 00a08000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f2b8ec04000-7f2b8ec09000 r-xp 00a08000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f2b8ec09000-7f2b8ec12000 rwxp 00a0d000 08:05 99755                      /usr/lib64/atlas/libsatlas.so.3.10
+7f2b8ec12000-7f2b8ec87000 r-xp 00000000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f2b8ec87000-7f2b8ee86000 ---p 00075000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f2b8ee86000-7f2b8ef5e000 rwxp 00074000 08:03 173                        /opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so
+7f2b8ef5e000-7f2b8ef7c000 rwxp 00000000 00:00 0 
+7f2b8ef7c000-7f2b8ef9e000 r-xp 00000000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f2b8efeb000-7f2b8f13b000 rwxp 00000000 00:00 0 
+7f2b8f13b000-7f2b8f14b000 rwxs 00000000 00:cd 7118114566                 /zhome/49/5/153826/HPC_matrix_multiplication/collector.8688841.er/data.frameinfo
+7f2b8f14b000-7f2b8f172000 rwxp 00000000 00:00 0 
+7f2b8f17b000-7f2b8f17e000 rwxp 00000000 00:00 0 
+7f2b8f17e000-7f2b8f180000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f2b8f180000-7f2b8f182000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f2b8f182000-7f2b8f184000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f2b8f184000-7f2b8f186000 rwxs 00000000 00:0a 7618                       anon_inode:[perf_event]
+7f2b8f186000-7f2b8f19d000 rwxp 00000000 00:00 0 
+7f2b8f19d000-7f2b8f19e000 r-xp 00021000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f2b8f19e000-7f2b8f19f000 rwxp 00022000 08:05 34528                      /usr/lib64/ld-2.17.so
+7f2b8f19f000-7f2b8f1a0000 rwxp 00000000 00:00 0 
+7ffec938e000-7ffec93b0000 rwxp 00000000 00:00 0                          [stack]
+7ffec93d5000-7ffec93d7000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+   234.375    956.662 # matmult_blk 16
+/zhome/49/5/153826/.lsbatch/1610040301.8688840.shell: line 60: 28677 Aborted                 collect -o $EXPOUT $HWCOUNT ./$EXECUTABLE $PERM $MKN $BS
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-21-75>
+Subject: Job 8688840: <collector> in cluster <dcc> Exited
+
+Job <collector> was submitted from host <n-62-30-8> by user <s202447> in cluster <dcc> at Thu Jan  7 18:25:01 2021
+Job was executed on host(s) <n-62-21-75>, in queue <hpcintro>, as user <s202447> in cluster <dcc> at Thu Jan  7 18:26:13 2021
+</zhome/49/5/153826> was used as the home directory.
+</zhome/49/5/153826/HPC_matrix_multiplication> was used as the working directory.
+Started at Thu Jan  7 18:26:13 2021
+Terminated at Thu Jan  7 18:26:18 2021
+Results reported at Thu Jan  7 18:26:18 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collector
+#BSUB -o collector_%J.out
+#BSUB -q hpcintro
+#BSUB -n 1
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 15
+
+module load studio
+
+# define the driver name to use
+# valid values: matmult_c.studio, matmult_f.studio, matmult_c.gcc or
+# matmult_f.gcc
+#
+EXECUTABLE=matmult_c.gcc
+
+# define the mkn values in the MKN variable
+#
+MKN="100 100 100"
+
+# define the permutation type in PERM
+#
+PERM="blk"
+
+# uncomment and set a reasonable BLKSIZE for the blk version
+#
+BLKSIZE="8 16"
+#BLKSIZE=8
+
+# define the max no. of iterations the driver should use - adjust to
+# get a reasonable run time.  You can get an estimate by trying this
+# on the command line, i.e. "MFLOPS_MAX_IT=10 ./matmult_...." for the
+# problem size you want to analyze.
+#
+export MFLOPS_MAX_IT=1000
+export MATMULT_COMPARE=0
+
+# experiment name 
+#
+JID=${LSB_JOBID}
+EXPOUT="$LSB_JOBNAME.${JID}.er"
+
+# uncomment the HWCOUNT line, if you want to use hardware counters
+
+(... more ...)
+------------------------------------------------------------
+
+Exited with exit code 134.
+
+Resource usage summary:
+
+    CPU time :                                   5.02 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   5 sec.
+    Turnaround time :                            77 sec.
+
+The output (if any) is above this job summary.
+
